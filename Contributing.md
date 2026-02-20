@@ -1,4 +1,4 @@
-# Contributing to XNet-Lab Website
+# Contributing to XIS-Lab Website
 
 ## Add Your Profile
 1. Fork this repository on GitHub.
@@ -9,9 +9,9 @@
 6. Open a Pull Request to the main repo.
 
 ## Create Your Own Research Repos
-1. Go to the xnet-lab organisation on GitHub.
+1. Go to the xis-lab organisation on GitHub.
 2. Click "New" to create a repository.
-3. Fill details and choose xnet-lab as the owner.
+3. Fill details and choose xis-lab as the owner.
 4. Clone with GitHub Desktop.
 5. Add your code locally.
 6. Commit and push.
