@@ -62,7 +62,8 @@
             left: 0;
             width: 100%;
             height: 80px;
-            background: #011C2C;
+            background: rgba(1, 28, 44, 0.95);
+            backdrop-filter: blur(6px);
             color: white;
             z-index: 1000;
             display: flex;
@@ -92,18 +93,21 @@
         }
         
         .hero {
-            border: 2px dashed #666;
-            padding: 40px;
-            margin-bottom: 30px;
+            padding: 60px 30px;
+            margin-bottom: 40px;
             text-align: center;
-            background: #fafafa;
+            background: linear-gradient(135deg, #011C2C, #003f63);
+            color: white;
+            border-radius: 12px;
         }
         
         .content-section {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-bottom: 20px;
-            background: #fff;
+            padding: 30px;
+            margin-bottom: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border: none;
         }
         
         .two-col {
@@ -129,8 +133,9 @@
             margin-bottom: 10px;
         }
         
-        .placeholder-img.large {
-            height: 250px;
+        .placeholder-img {
+            background: #eaeaea;
+            border-radius: 8px;
         }
         
         .placeholder-img.small {
@@ -233,7 +238,7 @@
         }
         
         .top-nav-item:hover {
-            background: #00C8D7;
+            background: rgba(0, 200, 215, 0.2);
         }
         
         .top-nav-item.active {
@@ -354,6 +359,35 @@
             
             .wireframe-container {
                 margin-top: 60px;
+            }
+
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+
+            .three-col {
+                grid-template-columns: 1fr;
+            }
+
+            .hero img {
+                width: 100%;
+                height: auto;
+            }
+
+            .page {
+                padding: 15px;
+            }
+
+            .content-section {
+                padding: 18px;
+            }
+
+            h1.page-title {
+                font-size: 20px;
+            }
+
+            .hero p {
+                font-size: 15px !important;
             }
         }
     </style>
@@ -844,7 +878,7 @@
                 <h2>Welcome to XIS Lab</h2>
             </div>
             
-            <div class="hero" style="border: none;">
+            <div class="hero">
                 <img src="Images/Logo/XIS-logo-blue.png" alt="XIS Lab Hero Image" style="width: 600px; height: 300px; object-fit: cover; margin-bottom: 20px;">
                 <p style="font-style: italic; font-size: 18px; color: #555; margin: 10px 0 20px 0;">Engineering the future of intelligent, connected and secure systems</p>
                 <p style="text-align: justify; color: #333; line-height: 1.6; font-size: 16px; max-width: 900px; margin: 0 auto;"><strong>XIS Lab</strong> is a deep tech research and innovation centre housed within the James Watt School of Engineering and School of Computing Science at the University of Glasgow. Our mission is to engineer intelligent, secure, and adaptive technologies that bridge the physical and digital domains. We operate at the confluence of telecommunications, electromagnetic systems, human-machine interaction, applied AI and cyber-physical integration, delivering solutions with real-world industrial impact. With a cross-disciplinary team of researchers, we focus on applied R&D that transforms emerging concepts into deployable, high-impact solutions across defence, healthcare, energy, and telecom sectors.<br><br>
